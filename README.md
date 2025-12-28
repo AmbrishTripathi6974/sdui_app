@@ -84,6 +84,24 @@ All components and actions are **defined by the server** and interpreted dynamic
 +--------------------------------------------------------+
 
 ```
+## 🔄 UI Rendering Flow (Step-by-Step)
+
+1. User opens app
+        ↓
+2. SDUIScreen requests screen JSON
+        ↓
+3. Server builds ScreenModel
+        ↓
+4. Server returns UI JSON
+        ↓
+5. Client parses JSON
+        ↓
+6. Screen Mapper builds layout
+        ↓
+7. Component Mapper renders widgets
+        ↓
+8. Action Handler executes actions
+
 ---
 
 ## 🏗 Architecture
