@@ -60,6 +60,8 @@ All components and actions are **defined by the server** and interpreted dynamic
 
 ## 📐 High-Level SDUI Architecture
 
+```text
+
 +-------------------+            +---------------------+
 |                   |  HTTP POST |                     |
 |   Flutter Client  | ----------> |    Dart Server      |
@@ -81,6 +83,7 @@ All components and actions are **defined by the server** and interpreted dynamic
 |                                                           |
 +-----------------------------------------------------------+
 
+```
 ---
 
 ## 🏗 Architecture
