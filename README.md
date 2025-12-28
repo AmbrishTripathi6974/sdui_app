@@ -58,6 +58,31 @@ All components and actions are **defined by the server** and interpreted dynamic
 
 ---
 
+## 📐 High-Level SDUI Architecture
+
++-------------------+            +---------------------+
+|                   |  HTTP POST |                     |
+|   Flutter Client  | ----------> |    Dart Server      |
+|   (sdui_client)   |             |   (sdui_server)     |
+|                   | <---------- |                     |
++---------+---------+   JSON UI   +----------+----------+
+          |                                    |
+          |                                    |
+          | uses shared models                 | uses shared models
+          |                                    |
++---------v------------------------------------v---------+
+|                                                           |
+|                    Shared Models                          |
+|                     (sdui_models)                         |
+|                                                           |
+|   - Screen Models                                         |
+|   - Component Models                                      |
+|   - Action Models                                         |
+|                                                           |
++-----------------------------------------------------------+
+
+---
+
 ## 🏗 Architecture
 
 ### 1. Shared Models (`sdui_models`)
