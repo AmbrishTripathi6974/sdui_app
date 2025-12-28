@@ -88,19 +88,26 @@ All components and actions are **defined by the server** and interpreted dynamic
 
 1. User opens app
         ↓
-2. SDUIScreen requests screen JSON
+   
+3. SDUIScreen requests screen JSON
         ↓
-3. Server builds ScreenModel
+   
+5. Server builds ScreenModel
         ↓
-4. Server returns UI JSON
+   
+7. Server returns UI JSON
         ↓
-5. Client parses JSON
+   
+9. Client parses JSON
         ↓
-6. Screen Mapper builds layout
+   
+11. Screen Mapper builds layout
         ↓
-7. Component Mapper renders widgets
+    
+13. Component Mapper renders widgets
         ↓
-8. Action Handler executes actions
+    
+15. Action Handler executes actions
 
 ---
 
