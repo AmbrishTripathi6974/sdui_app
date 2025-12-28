@@ -181,5 +181,4 @@ Since UI is server-driven, tests focus on app stability and async loading, not s
 
 ## 👤 Author
 
-Ambrish Tripathi
-Flutter Developer
+Ambrish Tripathi (Software Developer | Flutter Developer)
