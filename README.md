@@ -62,8 +62,8 @@ All components and actions are **defined by the server** and interpreted dynamic
 
 ```text
 
-+-------------------+            +---------------------+
-|                   |  HTTP POST |                     |
++-------------------+             +---------------------+
+|                   |  HTTP POST  |                     |
 |   Flutter Client  | ----------> |    Dart Server      |
 |   (sdui_client)   |             |   (sdui_server)     |
 |                   | <---------- |                     |
@@ -72,16 +72,16 @@ All components and actions are **defined by the server** and interpreted dynamic
           |                                    |
           | uses shared models                 | uses shared models
           |                                    |
-+---------v------------------------------------v---------+
-|                                                           |
-|                    Shared Models                          |
-|                     (sdui_models)                         |
-|                                                           |
-|   - Screen Models                                         |
-|   - Component Models                                      |
-|   - Action Models                                         |
-|                                                           |
-+-----------------------------------------------------------+
++---------v------------------------------------v---------+ 
+|                                                        |
+|                    Shared Models                       |
+|                     (sdui_models)                      |
+|                                                        |
+|   - Screen Models                                      |
+|   - Component Models                                   |
+|   - Action Models                                      |
+|                                                        |
++--------------------------------------------------------+
 
 ```
 ---
