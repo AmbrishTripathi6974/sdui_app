@@ -68,4 +68,74 @@ All components and actions are **defined by the server** and interpreted dynamic
 
 ### 2. Server (`sdui_server`)
 - Dart backend using `shelf`
-- Endpoint:
+- Endpoint: POST /screens/{screen_name}
+- Builds screen models and returns JSON
+- Controls:
+- UI layout
+- Component order
+- Navigation flow
+- Actions
+
+### 3. Client (`sdui_client`)
+- Flutter application
+- Fetches screen JSON dynamically
+- Renders UI using:
+- Screen Mapper
+- Component Mapper
+- Action Handler
+- Contains a generic `SDUIScreen` widget
+
+---
+
+## 🔁 Navigation Flow
+
+All navigation is **server-controlled** via actions:
+
+- Home → Profile
+- Home → Settings
+- Profile → Back to Home
+- Settings → Back to Home
+
+The Flutter client does not hardcode any navigation logic.
+
+---
+
+## ▶️ How to Run the Project
+
+### Prerequisites
+- Flutter SDK
+- Dart SDK
+- Android Emulator / iOS Simulator / Physical Device
+
+---
+
+### 1️⃣ Run the Server
+
+```bash
+cd sdui_server
+dart pub get
+dart run bin/server.dart
+
+```
+
+### 2️⃣ Server will start at
+
+```bash
+http://localhost:8080
+
+```
+
+### 3️⃣ Run the Flutter App
+
+```bash
+cd sdui_client
+flutter pub get
+flutter run
+
+```
+
+## 📌 Note:
+
+- Android Emulator uses http://10.0.2.2:8080
+- iOS Simulator uses http://localhost:8080
+
