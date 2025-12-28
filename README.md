@@ -176,3 +176,10 @@ A basic widget test is included to verify:
 - Loading indicator is displayed while fetching server UI
   
 Since UI is server-driven, tests focus on app stability and async loading, not static widgets.
+
+---
+
+## 👤 Author
+
+Ambrish Tripathi
+Flutter Developer
