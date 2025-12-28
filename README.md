@@ -138,4 +138,12 @@ flutter run
 
 - Android Emulator uses http://10.0.2.2:8080
 - iOS Simulator uses http://localhost:8080
+  
+---
 
+## 🧪 Testing
+
+A basic widget test is included to verify:
+- App launches successfully
+- Loading indicator is displayed while fetching server UI
+Since UI is server-driven, tests focus on app stability and async loading, not static widgets.
