@@ -102,7 +102,7 @@ Future<void> startServer() async {
   });
 
   final handler =
-      Pipeline().addMiddleware(logRequests()).addHandler(router);
+      Pipeline().addMiddleware(logRequests()).addHandler(router.call);
 
   // Emulator & device friendly
   await serve(handler, '0.0.0.0', 8080);
